@@ -1,38 +1,121 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul, li {
+  list-style: none;
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  background: linear-gradient(to right, #8a2387, #e94057, #f27121);
+  height: 100%;
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 16px;
   color: white;
+  padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.header_nav {
+  display: flex; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header__item {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.header__link {
+  color: white;
+  text-decoration: none;
+}
+
+.header__link:hover {
+  color: orange;
+}
+
+.main_button {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  align-items: center;
+  text-align: center;
+  width: 100px;
+  padding: 5px;
+  border-radius: 20px;
+  position: absolute;
+  top: 890px; 
+  left: 950px;
+}
+
+.main_button:hover {
+  background-color: grey;
+  color: white;
+  cursor: pointer;
+  align-items: center;
+  text-align: center;
+  width: 100px;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.Sidebar {
+  height: 100vh; 
+  margin: 0;
+  width: 250px;
+  background:  orange;
+  color: white;
+  padding-top: 10px;
+}
+
+.SidebarList .row {
+  height: 50px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: -50px;
+}
+
+.SidebarList .row:hover {
+  cursor: pointer; 
+  background-color: #8a2387;
+}
+
+.SidebarList #active {
+  background-color: #6b1568;
+}
+
+.title__main {
+  position: absolute; 
+  top: 100px; 
+  left: 800px;
+}
+
+.main__image {
+  position: absolute; 
+  top: 200px; 
+  left: 650px;
+  width: 40%;
+}
+
+.main__details {
+  position: absolute; 
+  top: 800px; 
+  left: 950px;
+}
+
+.main__description {
+  position: absolute; 
+  top: 835px; 
+  left: 800px;
 }
